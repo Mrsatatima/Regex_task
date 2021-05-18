@@ -10,7 +10,6 @@ def count_numbers(text):
     file = open(text,"r")
     new_text = file.read()
     number = re.compile(r'^[+-]?((\d+(\.\d*)?)|(\.\d+))($|[.,]$)')
-    print(type(new_text))
     x = new_text.split()
     nums = []
     count = 0
@@ -18,15 +17,23 @@ def count_numbers(text):
         if number.match(i):
             nums.append(i)
             count += 1
-    return  count, nums
+    return  count
 
 
 
-def count_fraction():
+def count_fraction(text):
     """
         counts fractional numbers i.e both negative an positive
         TODO update doc strings
     """
-    pass #TODO update the fucntion to pass test
-
-print(count_numbers("article.txt"))
+    file = open(text,"r")
+    new_text = file.read()
+    number = re.compile(r'(^[+-]?\d+\\tinyfrac{\d+}{\d+})|(^[+-]?\\frac{\d+}{\d+})$')
+    x = new_text.split()
+    nums = []
+    count = 0
+    for i in x:
+        if number.match(i):
+            nums.append(i)
+            count += 1
+    return  count
