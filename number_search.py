@@ -1,7 +1,8 @@
 # update the fucntions to count number of number(whole, decimal and fractions)
 #  in article.txt
 # use regex to match numbers and fractions
-import regex as re
+import re
+
 def count_numbers(text):
     """
         counts whole number and decimals i.e -ve and +ve whole numbers decimals
