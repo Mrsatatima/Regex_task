@@ -17,3 +17,10 @@ def count_fraction():
         TODO update doc strings
     """
     pass #TODO update the fucntion to pass test
+
+
+## Use this for your debugging purposes (all print statements should go here)
+if __name__ == "__main__":
+    
+    # Replace pass with your debugging code if any
+    pass
