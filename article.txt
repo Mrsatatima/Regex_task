@@ -1,7 +1,7 @@
 Article 1 ambient pollution in Lagos Nigeria 12:45:2
 The average Nigeira lives for 54 years while people in france live for 82years.
 This issue is as result of ambient air pollution in Nigeria.
-A recent World Bank study, the Cost of Air Pollution in Lagos, estimates that illness and premature deaths due to ambient air pollution caused losses of 21000000 in 2018, representing about 2\tinyfrac{1}{2) percent of Lagos State’s GDP.
+A recent World Bank study, the Cost of Air Pollution in Lagos, estimates that illness and premature deaths due to ambient air pollution caused losses of 21000000 in 2018, representing about 2\tinyfrac{1}{2} percent of Lagos State’s GDP.
 In the same year, it caused an estimated 11200 premature deaths, the highest in West Africa.
 Children under 5 were the most affected, accounting for 60 percent of total deaths.
 While adults suffered from heart disease, lung cancer, and chronic obstructive pulmonary disease.
@@ -17,14 +17,14 @@ Earth is the third planet from the Sun and the only astronomical object known to
 The age of Earth is estimated to be 4.54 ± 0.05 billion years
 About 29.2 percent of Earth's surface is land consisting of continents and islands.
 The remaining 70.8 percent is covered with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other fresh water, which together constitute the hydrosphere
-Earth's gravity interacts with other objects in space, especially the Moon, which is Earth's only natural satellite. Earth orbits around the Sun in about 365\\tinyfrac{1}{4} days
+Earth's gravity interacts with other objects in space, especially the Moon, which is Earth's only natural satellite. Earth orbits around the Sun in about 365\tinyfrac{1}{4} days
 Earth circumferences:
 Equatorial circumference: 40076 km
 Polar circumference: 40005 km
 Diameter of the Earth:
 Equatorial Radius: 6378 km
 Polar Radius: 6 357km
-Volume: V = \frac{4}{3} x \frac{22}{7} x r3 = 1086781292542 cubic km or 260732699457 miles.
+Volume: V = \frac{4}{3} x -\frac{22}{7} x r3 = 1086781292542 cubic km or 260732699457 miles.
 Atmosphere:
 Average Surface Pressure: 1014 millibars.
 Surface Density: 1.217 kg/m3
@@ -101,12 +101,12 @@ Article 4 Fraction to decimal conversion
 \frac{5}{32} = 0.15625
 \frac{11}{64} = 0.171875
 \frac{3}{16} = 0.1875
-\frac{13}{64} = 0.203125
-\frac{7}{32} = 0.21875
+\frac{13}{64}a = 0.203125a
+-2\tinyfrac{7}{32} = -0.21875
 \frac{15}{64} = 0.234375
-\frac{1}{4} = 0.25
+-\frac{1}{4} = -0.25
 \frac{17}{64} = 0.265625
-\frac{9}{32} = 0.28125
+-\frac{9}{32} = -0.28125
 \frac{19}{64} = 0.296875
 \frac{5}{16} = 0.3125
 \frac{21}{64} = 0.328125

@@ -17,5 +17,3 @@ def count_fraction():
         TODO update doc strings
     """
     pass #TODO update the fucntion to pass test
-
-print(count_numbers("article.txt"))
