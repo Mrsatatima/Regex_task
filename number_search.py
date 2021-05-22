@@ -2,8 +2,10 @@
 #  in article.txt
 # use regex to match numbers and fractions
 import re
-frac_pattern = r'(-?\d+\\[A-Za-z]+{\d+}{\d+} |-?\\[A-Za-z]+{\d+}{\d+})'
-number_pattern = r"([^a-zA-Z{./\\}]\d+ |\d+\.\d+|[:]\d+|\d+[:])"
+frac_pattern = r'(-?\d+\\tinyfrac{\d+}{\d+}[^A-Za-z]|-?\\frac{\d+}{\d+}[^A-Za-z])'
+number_pattern = r'([^a-zA-Z{./\\}]\d+ |\d+\.\d+| \d+[^/:\\)-}])'
+numbers = []
+fractions = []
 
 
 def count_numbers(text):
@@ -11,15 +13,15 @@ def count_numbers(text):
         counts whole number and decimals i.e -ve and +ve whole numbers decimals
         TODO update doc strings
     """
-    count = -1
+
     with open(text, "r") as f:
         article = f.read()
     pattern = re.compile(number_pattern)
     match = pattern.finditer(article)
     for x in match:
         print(x.group(0))
-        count += 1
-    return count
+        numbers.append(x.group(0))
+    return len(numbers)
 
 
 def count_fraction(text):
@@ -27,7 +29,6 @@ def count_fraction(text):
         counts fractional numbers i.e both negative an positive
         TODO update doc strings
     """
-    count = -1
 
     with open(text, "r") as f:
         article = f.read()
@@ -36,8 +37,8 @@ def count_fraction(text):
     match = pattern.finditer(article)
     for x in match:
         print(x.group(0))
-        count += 1
-    return count
+        fractions.append(x.group(0))
+    return len(fractions)
 
 
 # Use this for your debugging purposes (all print statements should go here)
