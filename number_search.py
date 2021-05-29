@@ -3,7 +3,7 @@
 # use regex to match numbers and fractions
 import re
 frac_pattern = r'(-?\d+\\tinyfrac{\d+}{\d+}[^A-Za-z]|-?\\frac{\d+}{\d+}[^A-Za-z])'
-number_pattern = r'([^a-zA-Z{./\\}]\d+ |\d+\.\d+| \d+[^/:\\)-}])'
+number_pattern = r"([^\na-zA-Z{./\\}]\d+ |\d+\.\d+|\d+[^\n/:\\)-}])"
 numbers = []
 fractions = []
 
@@ -21,6 +21,7 @@ def count_numbers(text):
     for x in match:
         print(x.group(0))
         numbers.append(x.group(0))
+    print(numbers)
     return len(numbers)
 
 
@@ -38,6 +39,7 @@ def count_fraction(text):
     for x in match:
         print(x.group(0))
         fractions.append(x.group(0))
+    print(fractions)
     return len(fractions)
 
 
