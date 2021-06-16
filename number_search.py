@@ -4,32 +4,38 @@
 import re
 
 def count_numbers(text):
-    pattern = r"(?:-?\\frac{\d+}{\d+}|-?\d+\\tinyfrac{\d+}{\d+}|[A-Z]+[0-9]+|[a-z][0-9]+|-?\d+\.? ?,?\d+|-?\d+)"
+    pattern = r"^[-]?((\d+(\.\d+)?)|(\.?,?\d+))($|[.,]$)"
 
     with open(text, "r") as f:
-        text = f.read()
-        regex = re.compile(char)
-        matched = regex.findall(text)
+        text = f.read().split()
+        regex = re.compile(pattern)
         searched_matches = []
-        for i in range(len(matched)):
-            if re.compile(r"(?:^[-]?\d+\.? ?,?\d+$|^[-]?\d+$)").search(matched[i]):
-                searched_matches.append(matched[i])
+        for item in text:
+            if regex.match(item):
+                searched_matches.append(item)
+                
         count = len(searched_matches)
         return count
     return
+    pass #TODO update the fucntion to pass test
 
 
 
 def count_fraction(text):
-    frac_pattern = r"(?:-?\\frac{\d+}{\d+}|-?\d+\\tinyfrac{\d+}{\d+})"
+    frac_pattern = r'^[-]?((\d+\\tinyfrac)|(\\frac)){\d+}{\d+}$'
 
     with open(text, "r") as f:
-        read_text = f.read()
-        regex = re.compile(pattern)
-        matched = regex.findall(read_text)
-        count = len(matched)
+        read_text = f.read().split()
+        regex = re.compile(frac_pattern)
+        search_fraction = []
+        for item in text:
+            if regex.match(item):
+                search_fraction.append(item)
+        
+        count = len(search_fraction)
         return count
     return
+    pass #TODO update the fucntion to pass test
 
 
 ## Use this for your debugging purposes (all print statements should go here)
